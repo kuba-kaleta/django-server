@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import ToDoList, Item
 # Create your views here.
 
 
-def index(response):
-    return HttpResponse("<h1>Welcome</h1>")
+def index(response, id):
+    return render(response, "myapp/base.html", {})
 
 
-def v1(response):
-    return HttpResponse("<h1>View 1</h1>")
+def home(response):
+    return render(response, "myapp/home.html", {})
