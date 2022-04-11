@@ -1,13 +1,15 @@
 <html>
 <head>
 
-    <title>Strona</title>
+    <title>{% block title %}Strona{% endblock %}</title>
 </head>
 
 <body>
-
+    <div id="content", name="content">
+        {% block content %}
+        Hello
+        {% endblock %}
+    </div>
 </body>
-
-<p>template</p>
 
 </html>
