@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     'myapp.apps.MyappConfig',
     'register.apps.RegisterConfig',
+    'mytest.apps.MytestConfig',
 ]
 
 MIDDLEWARE = [

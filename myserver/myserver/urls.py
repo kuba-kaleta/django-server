@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from register import views as v
+from register import views as vr
+from mytest import views as vt
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("register/", v.register, name="register"),
+    path("register/", vr.register, name="register"),
     path('', include("myapp.urls")),
     path('', include("django.contrib.auth.urls")),
+    path("mytest/", vt.mytest, name="mytest"),
 ]
