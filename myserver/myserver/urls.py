@@ -20,8 +20,9 @@ from mytest import views as vt
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("register/", vr.register, name="register"),
     path('', include("myapp.urls")),
     path('', include("django.contrib.auth.urls")),
+    path("register/", vr.register, name="register"),
     path("mytest/", vt.mytest, name="mytest"),
+    path("findall/", vt.findall, name="findall"),
 ]
