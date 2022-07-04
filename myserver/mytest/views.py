@@ -6,5 +6,5 @@ def mytest(response):
 
 
 def findall(response):
-    return render(response, "findall.html")
 
+    return render(response, "findall.html")
